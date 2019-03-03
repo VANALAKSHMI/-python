@@ -1,0 +1,17 @@
+#105
+n=int(input(""))
+c=0
+s=0
+if(1<=n<=100000):
+    if(n>=10):
+        while(n>0):
+            a=n%10
+            c=c+1
+            if(c==1):
+                m=a
+            d=a**m
+            s=s+d
+            n=n//10
+        print(s)
+    else:
+        print(n)
